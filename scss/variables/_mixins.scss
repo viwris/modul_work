@@ -1,0 +1,80 @@
+@use "../variables/fonts" as *;
+@use "../variables/colors" as *;
+
+
+@mixin flex-box ($display: flex, $flex-direction: row, $jcc: center, $aic: center){
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $jcc;
+    align-items: $aic;
+}
+
+@mixin border_button($radius: 16px, $padding-y: 8px, $padding-x: 16px, $border: 1px solid rgba(255, 255, 255, 0.2), $bg: rgba(255, 255, 255, 0.08), $width: 100px, $height: 50px) {
+  padding: $padding-y $padding-x;
+  border-radius: $radius;
+  border: $border;
+  background: $bg;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  width: $width;
+  height: $height;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+@mixin text-decor($font-family: $font-poppins, $font-weight: $fw-bold, $letter-spacing: 1px, $color: $white-100, $font-size: 16px, $width: 100px, $height: 100px, $line-height: 99px, $text-transform: uppercase){
+  font-family: $font-family;
+  font-weight: $font-weight;
+  letter-spacing: $letter-spacing;
+  color: $color;
+  font-size: $font-size;
+  width: $width;
+  height: $height;
+  line-height: $line-height;
+  text-transform: $text-transform;
+}
+
+@mixin position(
+  $position: relative,
+  $top: null,
+  $bottom: null,
+  $left: null,
+  $right: null
+) {
+  position: $position;
+
+  @if $top != null {
+    top: $top;
+  }
+
+  @if $bottom != null {
+    bottom: $bottom;
+  }
+
+  @if $left != null {
+    left: $left;
+  }
+
+  @if $right != null {
+    right: $right;
+  }
+}
+
+@mixin grid($grid-tem-col, $grid-tem-row, $width: 100px, $height: 100px){
+  display: grid;
+  grid-template-columns: $grid-tem-col;
+  grid-template-rows: $grid-tem-row;
+  width: $width;
+  height: $height;
+}
+
+@mixin model_wd($wd: 440px, $pd: 36px, $br: 24px, $bg: #0e0822, $b: 1px solid rgba(139, 92, 246, 0.3), $transform: translateY(20px), $transition: 0.3s ease, $pos: relative){
+  width: $wd;
+  padding: $pd;
+  border-radius: $br;
+  background: $bg;
+  border: $b;
+  transform: $transform;
+  transition: $transition;
+  position: $pos;
+}

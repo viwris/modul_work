@@ -1,0 +1,23 @@
+@use "../variables/variables-all" as *;
+.section_03{
+    @include flex-box($flex-direction: column);
+    margin-top: 374px;
+}
+
+.text_01_section_03{
+    @include text-decor($width: 729px, $height: 124px, $font-size: 64px, $line-height: 62px, $font-weight: $fw-semibold);
+    text-align: center;
+    margin-bottom: 28px
+}
+
+.container_ramka_section_03{
+    @include flex-box($jcc: space-around);
+    gap: 20px;
+}
+
+.text_ramka_section_03{
+    @include flex-box($aic: end);
+    max-width: 387px;
+    max-height: 206px;
+    height: 100%;
+}

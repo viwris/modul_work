@@ -1,0 +1,57 @@
+@use "../variables/fonts" as *;
+@use "../variables/colors" as *;
+@use "../variables/mixins" as *;
+
+.section_01{
+    @include flex-box($flex-direction: column);
+}
+
+.container_sectiont_01{
+    @include flex-box($flex-direction: column, $jcc: start, $aic: start);
+    position: relative;
+    right: 90px;
+    top: 15px;
+}
+
+.text01_section_01{
+    @include text-decor($font-size: 104px, $width: 1000px, $height:  265px);
+    @include flex-box($flex-direction: column, $jcc: center, $aic: start);
+    position: relative;
+    z-index: 1;
+}
+
+.text02_section_01{
+    position: relative;
+    z-index: 2;
+    @include text-decor($font-size: 40px, $width: 804px, $height:  132px, $font-weight: $fw-semibold);
+    text-transform: uppercase;
+    line-height: 44px;
+}
+
+.container_button_section_01{
+    @include flex-box($flex-direction: column, $jcc: start, $aic: start);
+    @include position ($top: 109px);
+    gap: 20px;
+}
+
+.button_01_section_01{
+    @include border_button($width: 488px, $height: 56px, $radius: 48px, $bg: #22c55e9f, $border: none);
+    @include flex-box;
+}
+
+.text_button_01_section_01{
+    @include text-decor($font-size: 24px, $width: 488px, $height: 56px, $font-family: $font-poppins, $font-weight: $fw-bold, $line-height: 96px);
+     @include flex-box($flex-direction: row, $jcc: center, $aic: center);
+}
+
+.button_02_section_01{
+    @include border_button($width: 285px, $height: 56px, $radius: 48px, $bg: transparent, $border: none);
+    box-shadow: inset 3px 0 1px rgba(255, 255, 255, 0.2),
+                inset -3px 0 1px rgba(255, 255, 255, 0.2);
+    @include flex-box($flex-direction: row, $jcc: center, $aic: center);
+}
+
+.text_button_02_section_01{
+    @include text-decor($font-size: 16px, $width: 285px, $height: 56px, $font-family: $font-poppins, $font-weight: $fw-bold, $color: $white-70, $line-height: 28px);
+    @include flex-box($flex-direction: row, $jcc: center, $aic: center);
+}

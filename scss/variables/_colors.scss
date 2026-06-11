@@ -1,0 +1,15 @@
+$bg-start: #0a0117;
+$bg-middle: #120226;
+$bg-end: #180549;
+
+$primary-bg-color: linear-gradient(
+  180deg,
+  $bg-start 0%,
+  $bg-middle 50%,
+  $bg-end 100%
+);
+
+$color-white: #ffffff;
+
+$white-100: $color-white;
+$white-70: rgba($color-white, 0.7);

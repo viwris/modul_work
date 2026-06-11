@@ -1,0 +1,40 @@
+@media (max-width: 430px){
+    
+    .block_comments_section_05{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .avatar_section_05_media{
+        max-width: 358px;
+    }
+
+    .text_titles_section_05{
+        max-width: 361px;
+        max-height: 62px;
+        height: 100%;
+        font-size: 36px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .star_comments_section_05{
+        max-width: 361px;
+        gap: 0;
+    }
+
+    .comments_section_05{
+        max-width: 361px;
+    }
+
+    .text_comments_section_05{
+        max-width: 361px;
+        max-height: 68px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    
+    .block_comments_section_05{
+        gap: 0;
+    }
+}

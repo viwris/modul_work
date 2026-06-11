@@ -1,0 +1,29 @@
+
+
+@media (max-width: 430px){
+    body{
+        max-width: 430px;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: visible;
+    }
+    .header{
+        display: none;
+    }
+
+    .icon_logo_header{
+        max-width: 131px;
+        max-height: 87px;
+    }
+
+    .nav, .header_btn{
+        display: none;
+    }
+
+    .menu_header{
+        display: flex;
+        margin-right: 20px;
+        box-shadow: inset 3px 0 1px rgb(0, 4, 19),
+                    inset -3px 0 1px rgb(0, 4, 19);
+    }
+}

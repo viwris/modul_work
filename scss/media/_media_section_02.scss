@@ -1,0 +1,50 @@
+@media (max-width: 430px){
+
+    .img_ball_01_section_02, .img_ball_02_section_02, .img_ball_03_section_02, .img_ball_04_section_02{
+        display: none;
+    }
+
+    .section_02{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 24px;
+        position: relative;
+        top: 263px;
+    }
+
+    .text_section_02_flex{
+        max-width: 285px;
+        max-height: 71px;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-weight: 600;
+        letter-spacing: 0;
+    }
+
+    .container_01_section_02_grid{
+        width: 361px;
+        grid-template-rows: repeat(6, 40px);
+        gap: 15px;
+    }
+
+    .ramka_bt_section_02{
+        width: 362px;
+        height: 40px;
+    }
+
+    .text_section_02_grid{
+        max-width: 342px;
+        width: 100%;
+        max-height: 15px;
+        font-size: 13px;
+        line-height: 10px;
+        font-weight: 500;
+        letter-spacing: 0;
+    }
+
+    .container_02_section_02_flex{
+        width: auto;
+        height: auto;
+    }
+}

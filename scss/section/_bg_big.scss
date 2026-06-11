@@ -1,0 +1,34 @@
+@use "../variables/variables-all" as *;
+
+.bg_big{
+    @include position;
+}
+
+.img_bg_big{
+    @include position($position: absolute, $top: -800px, $left: -120px);
+    z-index: -10;
+    filter: blur(10px);
+}
+
+.img_bg_desk{
+    @include position($position: absolute, $left: 790px, $top: 200px);
+    z-index: -10;
+}
+
+.ramka_section_03{
+    @include position;
+    @include flex-box($flex-direction: column);
+    margin-bottom: 26px;
+}
+
+.text_ramka_section_03{
+    @include text-decor($width: 488px, $height: 206px, $line-height: 47px, $font-size: 15px, $font-weight: $fw-semibold);
+    width: 100%;
+    @include position($position: absolute);
+    @include flex-box($aic: end);
+}
+
+.text_02_ramka_section_03{
+    @include text-decor($width: 842px, $height: 56px, $font-family: $font-inter, $font-weight: $fw-medium, $font-size: 20px, $line-height: 28px);
+    text-align: center;
+}

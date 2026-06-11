@@ -1,0 +1,60 @@
+@use "../variables/variables-all" as *;
+
+.section_02{
+    @include flex-box;
+    @include position($top: 357px);
+    gap: 110px;
+    margin: 0 auto;
+}
+
+.container_01_section_02_grid{
+    @include grid(repeat(1, 1fr), repeat(6, 54px), $width: 590px, $height: 479px);
+    gap: 30px;
+}
+
+.text_section_02_grid{
+    @include flex-box;
+    @include text-decor($width: auto, $height: 10px, $font-size: 20px, $color: $white-70, $font-family: $font-inter, $font-weight: $fw-medium, $line-height: 0);
+    text-align: center;
+}
+
+.ramka_bt_section_02{
+    @include border_button($width: 590px, $height: 54px, $radius: 40px, $bg: #4e46e50c);
+    backdrop-filter: none;
+    @include flex-box($aic: center);
+}
+
+.container_02_section_02_flex{
+    width: 488px;
+    height: 479px;
+}
+
+.text_section_02_flex{
+    @include text-decor($font-size: 113px, $letter-spacing: 8px, $line-height: 133px, $width: 488px, $height: 479px);
+    
+    @include flex-box;
+
+    position: relative;
+    z-index: 3;
+}
+
+.container_ball_section_02{
+    @include position($top: 50px, $left: 100px);
+}
+
+.img_ball_01_section_02{
+    @include position($left: -125px, $top: -290px);
+    z-index: -1;
+}
+
+.img_ball_02_section_02{
+    @include position($position: absolute, $top: 270px, $left: -50px);
+}
+
+.img_ball_03_section_02{
+    @include position($position: absolute, $left: 960px);
+}
+
+.img_ball_04_section_02{
+    @include position($position: absolute, $top: -80px, $left: 530px);
+}

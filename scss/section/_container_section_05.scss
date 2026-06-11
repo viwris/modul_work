@@ -1,0 +1,123 @@
+@use "../variables/variables-all" as *;
+
+.section_05{
+    @include flex-box;
+    max-width: 1440px;
+    width: 100%;
+    max-height: 406px;
+    height: 100%;
+    margin-top: 161px;
+}
+
+.block_comments_section_05{
+    @include flex-box;
+    gap: 112px;
+    width: fit-content;
+}
+
+.ramka_comment_section_05{
+    @include flex-box($flex-direction: column);
+    gap: 18px;
+}
+
+.text_titles_section_05{
+    @include text-decor($font-weight: $fw-semibold, $font-size: 36px, $width: 488px, $height: 28px, $line-height: 28px);
+}
+
+.text_comments_section_05{
+    @include text-decor($font-family: $font-inter, $font-weight: $fw-medium, $font-size: 18px, $width: 484px, $height: 56px, $line-height: 28px);
+    text-align: center;
+}
+
+.comments_section_05{
+    @include flex-box;
+    @include border_button($width: 488px, $height: 99px, $radius: 20px);
+    border: none;
+    cursor: default;
+}
+
+.star_comments_section_05{
+    @include flex-box;
+    gap: 26px;
+    @include border_button($width: 488px, $height: 99px, $radius: 20px, $bg: #efebeb2d);
+    width: 100%;
+    border: none;
+    cursor: default;
+}
+
+.fon_text{
+    position: relative;
+}
+
+.fon_text_blur{
+    @include position($position: absolute, $top: -400px, $left: -50px);
+    z-index: -10;
+    filter: blur(6px) brightness(0.4);
+}
+
+.reviews_container {
+    position: relative;
+    width: 100%;
+    height: 406px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    opacity: 0;
+
+    animation: reviewFade 16s infinite;
+}
+
+.review1 {
+    animation-delay: 0s;
+}
+
+.review2 {
+    animation-delay: 4s;
+}
+
+.review3 {
+    animation-delay: 8s;
+}
+
+.review4 {
+    animation-delay: 12s;
+}
+
+@keyframes reviewFade {
+
+    0% {
+        opacity: 0;
+        transform: translate(-50%, calc(-50% + 20px));
+    }
+
+    5% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    20% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    25% {
+        opacity: 0;
+        transform: translate(-50%, calc(-50% - 20px));
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, calc(-50% - 20px));
+    }
+}

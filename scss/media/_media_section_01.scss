@@ -1,0 +1,113 @@
+@media (max-width: 430px){
+    .menu_430{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 430px;
+        width: 100%;
+        max-height: 108px;
+        height: 100%;
+    }
+
+    .menu_header{
+        margin-right: 30px;
+    }
+
+    .img_bg_3_Anone, .img_bg_3_Bnone, .img_bg_3_Cnone{
+        display: block;
+        position: absolute;
+    }
+
+    .img_bg_1, .img_bg_2, .img_bg_3{
+        display: none;
+    }
+
+    .img_bg_3_Anone{
+        right: -175px;
+        top: 120px;
+    }
+
+    .img_bg_3_Bnone{
+        right: -200px;
+        top: -20px;
+        z-index: -1;
+        top: 110px;
+    }
+
+    .img_bg_3_Cnone{
+        right: -215px;
+        top: 280px;
+    }
+
+    .container_sectiont_01{
+        display: flex;
+        justify-content: center;
+        margin-left:180px;
+        padding: 0;
+        max-height: auto;
+    }
+
+    .text01_section_01{
+        font-size: 37px;
+        line-height: 42px;
+        max-width: 361px;
+        max-height: 86px;
+    }
+    
+    .text02_section_01{
+        max-width: 361px;
+        font-size: 20px;
+        line-height: 24px;
+        max-height: 82px;
+        margin-top: 12px;
+    }
+
+    .button_01_section_01{
+        max-width: 361px;
+        max-height: 50px;
+    }
+
+    .button_02_section_01{
+        max-width: 265px;
+        max-height: 50px;
+    }
+
+    .text_button_01_section_01{
+        font-size: 16px;
+        line-height: 96px;
+    }
+
+    .text_button_02_section_01{
+        line-height: 28px;
+    }
+    
+    .container_button_section_01{
+        margin-top: 230px;
+    }
+
+    .img_bg_4, .img_bg_5{
+    display: none;
+    }
+
+    .img_bg_6_none, .img_bg_7_none{
+    display: block;
+    position: absolute;
+    }
+
+    .img_bg_6_none{
+        top: -60px;
+        left: -70px;
+        z-index: -2;
+    }
+
+    .img_bg_7_none{
+        top: 100px;
+        right: -80px;
+        z-index: -2;
+    }
+
+    .img_bg_cube{
+    position: relative;
+}
+
+}

@@ -1,0 +1,93 @@
+@use "../variables/variables-all" as *;
+
+.footer{
+    background-color: rgb(11, 1, 15);
+    width: 100%;
+    max-width: 1440px;
+    height: 515px;
+    @include flex-box($flex-direction: column, $jcc: start);
+}
+
+.container_for_info_footer{
+    @include flex-box($aic: start);
+    gap: 79px;
+}
+
+.block_footer_left{
+    @include flex-box($flex-direction: column, $jcc: start);
+    gap: 43px;
+    flex-wrap: nowrap;
+    max-height: 400px
+}
+
+.container_top_footer{
+    @include flex-box;
+    gap: 20px;
+    margin-top: 60px;
+}
+
+.text_top_left_footer{
+    @include flex-box($flex-direction: column, $aic: start);
+    gap: 5px;
+}
+
+.title_finish_footer{
+    @include text-decor($color: $white-70, $font-size: 32px, $width: 418px, $height: 45px, $line-height: 32px, $text-transform: none);
+}
+
+.text_finish_footer{
+    @include text-decor($font-weight: $fw-semibold, $color: $white-70, $font-size: 13px, $width: 334px, $height: 25px, $line-height: 32px, $text-transform: none);
+}
+
+.in{
+    margin-right: 34px;
+}
+
+.tg{
+    margin-right: 38px;
+}
+
+.wa{
+    margin-right: 29px;
+}
+
+.block_footer_right{
+    @include flex-box($aic: end);
+    gap: 120px;
+    margin-top: 80px;
+    padding: 0;
+}
+
+.list_info_footer{
+    @include flex-box($flex-direction: column);
+    gap: 60px;
+}
+
+.nav_list_footer{
+    max-height: 340px;
+    height: 100%;
+}
+
+.list_contact_footer{
+    list-style: disc;
+    color: #FFFFFFB2;
+    margin-top: 60px
+}
+
+.line_footer {
+    @include flex-box;
+    width: 100%;
+}
+
+.footer-line {
+    max-width: 1440px;
+    width: 80%;
+    height: 1px;
+    background: rgba(255,255,255,.6);
+    margin-top: 40px;
+}
+
+.text_creator_footer{
+    @include text-decor($font-family: $font-inter, $font-weight: $fw-small, $color: $white-70, $font-size: 8px, $width: 203px, $height: 25px, $line-height: 15px);
+    margin-top: 12px;
+}

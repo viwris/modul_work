@@ -1,0 +1,20 @@
+@use "./root" as *;
+@use "../variables/colors" as *;
+@use "../variables/mixins" as *;
+
+body{
+    @include flex-box($jcc: start, $flex-direction: column);
+    background: $primary-bg-color;
+    height: auto;
+    max-width: 1440px;
+    width: 100%;
+    justify-self: center;
+    overflow-x: hidden;
+}
+
+main{
+    overflow-x: hidden;
+    max-width: 1440px;
+    width: 100%;
+    height: auto;
+}

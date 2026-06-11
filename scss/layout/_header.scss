@@ -1,0 +1,49 @@
+@use "../variables/mixins" as *;
+@use "../variables/colors" as *;
+@use "../variables/fonts" as *;
+
+header{
+    @include flex-box($flex-direction: row, $jcc: center );
+    width: 90vw;
+    height: 10vh;
+    gap: 99px;
+}
+
+li, .header_btn{
+    font-family: $font-inter;
+    color: $white-70;
+    font-size: medium;
+    padding: 10px;
+}
+
+.nav__list{
+    gap: 99px;
+    @include flex-box($flex-direction: row, $jcc: space-around);
+    font-size: larger;
+}
+
+.header_btn{
+    @include border_button($width: 183px, $radius: 48px, $padding-y: 16px, $padding-x: 40px, $bg: transparent, $border: none);
+    @include flex-box;
+    box-shadow: inset -2px 0 1px rgba(255, 255, 255, 0.2),
+                inset 2px 0 1px rgba(255, 255, 255, 0.2);
+    font-family: $font-poppins;
+    font-weight: $fw-bold;
+    letter-spacing: 1px;
+}
+
+.header_a{
+    color: $white-70;
+}
+
+.menu_header{
+    @include border_button($bg: rgba(32, 32, 32, 0.116), $radius: 75px, $width: 75px, $height: 75px);
+    @include flex-box($flex-direction: column);
+    gap: 10px;
+}
+
+.menu_hedder_hr{
+    display: flex;
+    max-width: 50px;
+    width: 100%;
+}

@@ -1,0 +1,36 @@
+@use "../variables/variables-all" as *;
+
+.section_06{
+    @include flex-box;
+    margin-top: 178px;
+}
+
+.container_section_06{
+    @include flex-box($flex-direction: column);
+}
+
+.titles_section_06{
+    @include text-decor($font-size: 96px, $width: 1200px, $height: 198px);
+    text-align: center;
+    text-transform: none;
+}
+
+.text_section_06{
+    @include text-decor($font-weight: $fw-semibold, $font-size: 32px, $width: 1188px, $height: 40px, $line-height: 40px);
+    margin-top: 41px;
+}
+
+.block_bt_section_06{
+    margin-top: 107px;
+}
+
+.bt_section_06{
+    @include text-decor($font-family: $font-poppins, $font-weight: $fw-bold, $font-size: 24px, $width: 350px, $height: 96px, $line-height: 96px);
+    @include border_button($radius: 48px, $width: 590px, $height: 56px, $bg: #22c55e8e);
+    max-width: 590px;
+    @include flex-box;
+}
+
+.google_map{
+    margin-top: 50px;
+}

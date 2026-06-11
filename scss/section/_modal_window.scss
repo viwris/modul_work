@@ -1,0 +1,154 @@
+@use "../variables/variables-all" as *;
+
+.modal-overlay{
+  position: fixed;
+  inset: 0;
+  @include flex-box;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+  z-index: 9999;
+}
+
+.modal-overlay:target{
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-window, .modal-window_thank_you{
+  @include model_wd;
+}
+
+.modal-overlay:target .modal-window{
+  transform: translateY(0);
+}
+
+.modal-close{
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 28px;
+}
+
+.modal-title{
+  @include text-decor($font-weight: $fw-semibold,  $font-size: 20px, $width: 388px, $height: 35px, $line-height: 30px);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.modal-subtitle{
+  @include text-decor($font-family: $font-inter, $font-weight: $fw-medium,  $font-size: 12px, $width: 266px, $height: 40px, $line-height: 20px);
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.container_for_titles_mw{
+    @include flex-box($flex-direction: column);
+}
+
+.modal-form, .modal-window{
+  @include flex-box($flex-direction: column);
+  gap: 15px;
+}
+
+.select_mw{
+    max-width: 369px;
+    width: 100%;
+}
+
+.modal-form input,
+.modal-form select{
+  height: 56px;
+  border: none;
+  border-radius: 14px;
+  padding: 0 20px;
+  background: #2a2146;
+  color: white;
+  font-size: 16px;
+}
+
+.modal-btn{
+  @include flex-box;
+  @include text-decor($font-size: 24px, $width: 369px, $height: 96px, $line-height: 96px);
+  @include border_button($border: none, $bg: #24AC56D9, $width: 369px, $height: 53px);
+  cursor: pointer;
+}
+
+.input-group {
+    @include flex-box;
+    max-width: 369px;
+    width: 100%;
+    height: 56px;
+    padding: 0 20px;
+    border-radius: 14px;
+    background: #2a2146;
+}
+
+input {
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.container_text_img_thank_you{
+    @include flex-box;
+    margin-top: 20px;
+}
+
+.container_thank_you_mw{
+    @include flex-box($flex-direction: column);
+}
+
+.thank_you_logo{
+    margin-bottom: 25px;
+}
+
+.modal-title_thank_you{
+    @include text-decor($font-weight: $fw-semibold, $font-size: 64px, $width: 370px, $height: 37px, $line-height: 30px);
+    text-wrap: nowrap;
+}
+
+.text_thank_you{
+    @include text-decor($font-family: $font-inter, $font-weight: $fw-medium, $font-size: 14px, $width: 242px, $height: 23px, $line-height: 24px);
+}
+
+.modal-window_contact{
+  @include model_wd;
+  @include flex-box($flex-direction: column, $jcc: end);
+  max-height: 400px;
+  height: 100%;
+}
+
+.titles_contact{
+  @include flex-box($aic: end);
+}
+
+.block_info_contant_mw{
+  @include flex-box($flex-direction: column);
+}
+
+.contact_info_ramka{
+  @include flex-box($jcc: start);
+  @include border_button($radius: 20px, $width: 369px, $height: 59px, $bg: #29223C, $border: none);
+  gap: 20px;
+  margin-top: 28px;
+}
+
+.icon_contact_mw{
+  margin-left: 10px;
+}
+
+.titles_contact_mw{
+  @include text-decor($font-weight: $fw-semibold, $font-size: 40px, $width: 369px, $height: 35px, $line-height: 30px);
+}
+
+.text_contact_mw{
+  @include text-decor($font-weight: $fw-medium, $font-size: 16px, $width: 269px, $height: 35px, $line-height: 30px,  $color: $white-70, $font-family: $font-inter);
+}
